@@ -1,0 +1,26 @@
+{
+  "name": "mithilakshar-api",
+  "version": "1.0.0",
+  "description": "mithilakshar api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjanisanu/mithilakshar.github.io.git"
+  },
+  "keywords": [
+    "mithilakshar",
+    "tirhuta"
+  ],
+  "author": "Anjani Sanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjanisanu/mithilakshar.github.io/issues"
+  },
+  "homepage": "https://github.com/anjanisanu/mithilakshar.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
