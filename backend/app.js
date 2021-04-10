@@ -1,10 +1,14 @@
-const express = require('express');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import express from 'express';
 
 const app = express();
+app.use(express.json());
 
-app.get('/', (req, res) => {
-	res.send('Hello from Mithilakshar');
-});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
